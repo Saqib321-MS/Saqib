@@ -1,0 +1,10 @@
+{
+  "name":"modern-switchgear-inventory",
+  "version":"1.0.1",
+  "description":"Modern Switchgear India Store & Factory Material Inventory",
+  "main":"main.js",
+  "author":"Modern Switchgear India",
+  "scripts":{"start":"electron .","build":"electron-builder --win"},
+  "devDependencies":{"electron":"^38.0.0","electron-builder":"^26.0.0"},
+  "build":{"appId":"com.modernswitchgear.inventory","productName":"Modern Switchgear Inventory","directories":{"output":"dist"},"files":["index.html","main.js","assets/**/*"],"win":{"target":[{"target":"nsis","arch":["x64"]}],"icon":"assets/company-logo.ico"},"nsis":{"oneClick":false,"allowToChangeInstallationDirectory":true,"createDesktopShortcut":true,"createStartMenuShortcut":true,"shortcutName":"Modern Switchgear Inventory"}}
+}
